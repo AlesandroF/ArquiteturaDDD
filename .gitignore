@@ -124,3 +124,15 @@ ArquiteturaDDD.Domain/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.AssemblyInfo
 ArquiteturaDDD.Domain/obj/ArquiteturaDDD.Domain.csproj.nuget.g.targets
 ArquiteturaDDD.Domain/obj/ArquiteturaDDD.Domain.csproj.nuget.g.props
 ArquiteturaDDD.Domain/obj/ArquiteturaDDD.Domain.csproj.nuget.cache
+ArquiteturaDDD.Infra.Data/obj/project.assets.json
+ArquiteturaDDD.Infra.Data/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+ArquiteturaDDD.Infra.Data/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+ArquiteturaDDD.Infra.Data/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+ArquiteturaDDD.Infra.Data/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Infra.Data.csprojAssemblyReference.cache
+ArquiteturaDDD.Infra.Data/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Infra.Data.csproj.CoreCompileInputs.cache
+ArquiteturaDDD.Infra.Data/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Infra.Data.assets.cache
+ArquiteturaDDD.Infra.Data/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Infra.Data.AssemblyInfoInputs.cache
+ArquiteturaDDD.Infra.Data/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Infra.Data.AssemblyInfo.cs
+ArquiteturaDDD.Infra.Data/obj/ArquiteturaDDD.Infra.Data.csproj.nuget.g.targets
+ArquiteturaDDD.Infra.Data/obj/ArquiteturaDDD.Infra.Data.csproj.nuget.g.props
+ArquiteturaDDD.Infra.Data/obj/ArquiteturaDDD.Infra.Data.csproj.nuget.cache
