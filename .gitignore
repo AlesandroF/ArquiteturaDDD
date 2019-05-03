@@ -113,3 +113,14 @@ ArquiteturaDDD.Application/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Application.As
 ArquiteturaDDD.Application/obj/ArquiteturaDDD.Application.csproj.nuget.g.targets
 ArquiteturaDDD.Application/obj/ArquiteturaDDD.Application.csproj.nuget.g.props
 ArquiteturaDDD.Application/obj/ArquiteturaDDD.Application.csproj.nuget.cache
+ArquiteturaDDD.Domain/obj/project.assets.json
+ArquiteturaDDD.Domain/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+ArquiteturaDDD.Domain/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+ArquiteturaDDD.Domain/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+ArquiteturaDDD.Domain/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.csproj.CoreCompileInputs.cache
+ArquiteturaDDD.Domain/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.assets.cache
+ArquiteturaDDD.Domain/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.AssemblyInfoInputs.cache
+ArquiteturaDDD.Domain/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.AssemblyInfo.cs
+ArquiteturaDDD.Domain/obj/ArquiteturaDDD.Domain.csproj.nuget.g.targets
+ArquiteturaDDD.Domain/obj/ArquiteturaDDD.Domain.csproj.nuget.g.props
+ArquiteturaDDD.Domain/obj/ArquiteturaDDD.Domain.csproj.nuget.cache
