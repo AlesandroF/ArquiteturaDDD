@@ -59,20 +59,16 @@
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id" title="Edit" class="btn btn-warning">
-                        <span class="glyphicon glyphicon-pencil"></span>
+                        <span class="glyphicon glyphicon-pencil">Edit</span>
                     </a>
 
                     <a asp-action="Details" asp-route-id="@item.Id" title="Details" class="btn btn-primary">
-                        <span class="glyphicon glyphicon-search"></span>
+                        <span class="glyphicon glyphicon-search">Details</span>
                     </a>
 
                     <a asp-action="Delete" asp-route-id="@item.Id" title="Delete" class="btn btn-danger">
-                        <span class="glyphicon glyphicon-trash"></span>
+                        <span class="glyphicon glyphicon-trash">Delete</span>
                     </a>
-
-                    <button type="button" class="btn btn-purple viewbutton" title="History" data-id="@item.Id" data-toggle="modal" data-target="#customerHistory">
-                        <span class="glyphicon glyphicon-time"></span>
-                    </button>
                 </td>
             </tr>
         }

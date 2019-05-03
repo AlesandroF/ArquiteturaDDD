@@ -157,3 +157,9 @@ ArquiteturaDDD.Domain/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.dll
 ArquiteturaDDD.ServicesAPI.API/obj/Debug/netcoreapp2.2/ArquiteturaDDD.ServicesAPI.API.csproj.CopyComplete
 ArquiteturaDDD.ServicesAPI.API/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Infra.CrossCutting.IoC.pdb
 ArquiteturaDDD.ServicesAPI.API/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Infra.CrossCutting.IoC.dll
+ArquiteturaDDD.MVC/obj/Debug/netcoreapp2.2/Razor/Views/Produto/Index.g.cshtml.cs
+ArquiteturaDDD.MVC/obj/Debug/netcoreapp2.2/Razor/Views/Produto/Edit.g.cshtml.cs
+ArquiteturaDDD.MVC/obj/Debug/netcoreapp2.2/Razor/Views/Produto/Details.g.cshtml.cs
+ArquiteturaDDD.MVC/obj/Debug/netcoreapp2.2/Razor/Views/Produto/Delete.g.cshtml.cs
+ArquiteturaDDD.MVC/obj/Debug/netcoreapp2.2/Razor/Views/Produto/Create.g.cshtml.cs
+ArquiteturaDDD.Domain/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.csprojAssemblyReference.cache
