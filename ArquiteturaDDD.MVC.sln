@@ -13,9 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{C0F76232-71A3-4BF8-AA68-32F51C5822F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquiteturaDDD.Infra.CrossCutting.Identity", "ArquiteturaDDD.Infra.CrossCutting.Identity\ArquiteturaDDD.Infra.CrossCutting.Identity.csproj", "{5F33C663-6259-4726-B4CA-AB8CCEDA831E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArquiteturaDDD.Infra.CrossCutting.Identity", "ArquiteturaDDD.Infra.CrossCutting.Identity\ArquiteturaDDD.Infra.CrossCutting.Identity.csproj", "{5F33C663-6259-4726-B4CA-AB8CCEDA831E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquiteturaDDD.Infra.CrossCutting.IoC", "ArquiteturaDDD.Infra.CrossCutting.IoC\ArquiteturaDDD.Infra.CrossCutting.IoC.csproj", "{F6F0EF6F-6E43-4366-A47A-8F2B977D464B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArquiteturaDDD.Infra.CrossCutting.IoC", "ArquiteturaDDD.Infra.CrossCutting.IoC\ArquiteturaDDD.Infra.CrossCutting.IoC.csproj", "{F6F0EF6F-6E43-4366-A47A-8F2B977D464B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - ServicesAPI", "1 - ServicesAPI", "{03525944-5C84-40A6-9B5A-05DF5635C841}"
 EndProject
@@ -23,7 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Appl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{6FDC536B-E861-4BF1-941E-8BA6AA3C4070}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquiteturaDDD.ServicesAPI.API", "ArquiteturaDDD.ServicesAPI.API\ArquiteturaDDD.ServicesAPI.API.csproj", "{5BDBB056-3B17-4DDE-8AA9-5748AF79A53B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquiteturaDDD.ServicesAPI.API", "ArquiteturaDDD.ServicesAPI.API\ArquiteturaDDD.ServicesAPI.API.csproj", "{64E159AB-4E9D-469D-96DF-42EB1B2BF4AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +43,10 @@ Global
 		{F6F0EF6F-6E43-4366-A47A-8F2B977D464B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6F0EF6F-6E43-4366-A47A-8F2B977D464B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6F0EF6F-6E43-4366-A47A-8F2B977D464B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5BDBB056-3B17-4DDE-8AA9-5748AF79A53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5BDBB056-3B17-4DDE-8AA9-5748AF79A53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5BDBB056-3B17-4DDE-8AA9-5748AF79A53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5BDBB056-3B17-4DDE-8AA9-5748AF79A53B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E159AB-4E9D-469D-96DF-42EB1B2BF4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E159AB-4E9D-469D-96DF-42EB1B2BF4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E159AB-4E9D-469D-96DF-42EB1B2BF4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E159AB-4E9D-469D-96DF-42EB1B2BF4AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,7 +57,7 @@ Global
 		{C0F76232-71A3-4BF8-AA68-32F51C5822F4} = {C7612ADB-B348-48EA-990F-7BF698B45CAD}
 		{5F33C663-6259-4726-B4CA-AB8CCEDA831E} = {C0F76232-71A3-4BF8-AA68-32F51C5822F4}
 		{F6F0EF6F-6E43-4366-A47A-8F2B977D464B} = {C0F76232-71A3-4BF8-AA68-32F51C5822F4}
-		{5BDBB056-3B17-4DDE-8AA9-5748AF79A53B} = {03525944-5C84-40A6-9B5A-05DF5635C841}
+		{64E159AB-4E9D-469D-96DF-42EB1B2BF4AE} = {03525944-5C84-40A6-9B5A-05DF5635C841}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4ECDC175-05F1-4A66-9977-2C542CF3556F}
