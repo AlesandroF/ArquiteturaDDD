@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="AutoMapper\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Entities\" />
   </ItemGroup>
 
 </Project>
