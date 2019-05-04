@@ -292,3 +292,6 @@ ArquiteturaDDD.Application/bin/Release/netcoreapp2.2/ArquiteturaDDD.Application.
 ArquiteturaDDD.Application/bin/Release/netcoreapp2.2/ArquiteturaDDD.Application.deps.json
 ArquiteturaDDD.ServicesAPI.API/obj/Release/netcoreapp2.2/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
 ArquiteturaDDD.ServicesAPI.API/obj/Release/netcoreapp2.2/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+ArquiteturaDDD.Infra.Data/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Infra.Data.csproj.CopyComplete
+ArquiteturaDDD.Infra.Data/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.pdb
+ArquiteturaDDD.Infra.Data/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.dll

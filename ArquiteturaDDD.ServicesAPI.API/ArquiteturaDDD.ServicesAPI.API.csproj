@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configuration\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ArquiteturaDDD.Infra.CrossCutting.IoC\ArquiteturaDDD.Infra.CrossCutting.IoC.csproj" />
   </ItemGroup>
 
