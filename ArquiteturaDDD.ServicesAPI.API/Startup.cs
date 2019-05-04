@@ -11,16 +11,16 @@ namespace ArquiteturaDDD.ServicesAPI.API
     {
         public Startup(IHostingEnvironment env)
         {
-            var builder = new ConfigurationBuilder()
-               .SetBasePath(env.ContentRootPath)
-               .AddJsonFile("appsettings.json", true, true)
-               .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true);
+            //var builder = new ConfigurationBuilder()
+            //   .SetBasePath(env.ContentRootPath)
+            //   .AddJsonFile("appsettings.json", true, true)
+            //   .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true);
 
             //if (env.IsDevelopment())
             //    builder.AddUserSecrets<Startup>();
 
-            builder.AddEnvironmentVariables();
-            Configuration = builder.Build();
+            //builder.AddEnvironmentVariables();
+            //Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
