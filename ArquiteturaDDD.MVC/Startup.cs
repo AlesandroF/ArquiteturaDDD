@@ -1,4 +1,5 @@
 ﻿using ArquiteturaDDD.Infra.CrossCutting.IoC.DependencyInjection;
+using ArquiteturaDDD.Infra.CrossCutting.IoC.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -19,9 +20,16 @@ namespace ArquiteturaDDD.MVC
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             //services.AddDbContext<ApplicationDbContext>(options =>
             //       options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             //services.AddAutoMapperSetup();
+            services.AddOptions();
+
+            var appSettingsSection = Configuration.GetSection("AppSettings");
+            services.Configure<AppSettings>(appSettingsSection);
+
+            var appSettings = appSettingsSection.Get<AppSettings>();
 
             RegisterServices(services);
 
@@ -31,16 +39,12 @@ namespace ArquiteturaDDD.MVC
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
-            {
                 app.UseMvcWithDefaultRoute();
-            }
             else
             {
                 app.UseExceptionHandler("/Home/Error");

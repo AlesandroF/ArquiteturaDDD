@@ -8,4 +8,8 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ArquiteturaDDD.Infra.Data\ArquiteturaDDD.Infra.Data.csproj" />
+  </ItemGroup>
+
 </Project>
