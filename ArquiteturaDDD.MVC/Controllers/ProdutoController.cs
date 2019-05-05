@@ -46,7 +46,7 @@ namespace ArquiteturaDDD.MVC.Controllers
 
             if (true) // IsValidOperation()
                 ViewBag.Sucesso = "Product Registered!";
-
+                
             return View();
         }
 
