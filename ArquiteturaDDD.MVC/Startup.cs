@@ -1,9 +1,10 @@
-﻿using ArquiteturaDDD.Infra.CrossCutting.IoC.DependencyInjection;
-using ArquiteturaDDD.Infra.CrossCutting.IoC.Extensions;
+﻿using ArquiteturaDDD.Infra.CrossCutting.IoC.Extensions;
+using ArquiteturaDDD.Infra.Data.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -27,9 +28,10 @@ namespace ArquiteturaDDD.MVC
             services.AddAutoMapperSetup();
             services.AddOptions();
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddDbContext<SQLContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            RegisterServices(services);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -37,6 +39,9 @@ namespace ArquiteturaDDD.MVC
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+
+            services.RegisterServices();
+            services.RegisterRepositories();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -52,11 +57,6 @@ namespace ArquiteturaDDD.MVC
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-        }
-
-        private static void RegisterServices(IServiceCollection services)
-        {
-            NativeInjectorBootStrapper.RegisterServices(services);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using ArquiteturaDDD.Application.ViewModels.Produto;
+using ArquiteturaDDD.ApplicationServices.Interfaces;
 using ArquiteturaDDD.MVC.Controllers.ControllerBase;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -7,6 +8,13 @@ namespace ArquiteturaDDD.MVC.Controllers
 {
     public class ProdutoController : BaseController
     {
+        private readonly IProdutoService _produtoService;
+
+        public ProdutoController(IProdutoService produtoService) : base()
+        {
+            _produtoService = produtoService;
+        }
+
         [Route("Produto")]
         public IActionResult Index()
         {
@@ -42,6 +50,8 @@ namespace ArquiteturaDDD.MVC.Controllers
         public IActionResult Create(ProdutoViewModel productViewModel)
         {
             if (!ModelState.IsValid) return View(productViewModel);
+
+            //_produtoService
             //_customerAppService.Register(productViewModel);
 
             if (true) // IsValidOperation()
