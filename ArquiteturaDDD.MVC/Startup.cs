@@ -1,4 +1,5 @@
 ﻿using ArquiteturaDDD.Infra.CrossCutting.IoC.DependencyInjection;
+using ArquiteturaDDD.Infra.CrossCutting.IoC.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -23,7 +24,7 @@ namespace ArquiteturaDDD.MVC
 
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddAutoMapperSetup();
+            services.AddAutoMapperSetup();
             services.AddOptions();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

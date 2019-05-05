@@ -13,6 +13,7 @@
 
 
   <ItemGroup>
+    <ProjectReference Include="..\ArquiteturaDDD.Application\ArquiteturaDDD.Application.csproj" />
     <ProjectReference Include="..\ArquiteturaDDD.Infra.CrossCutting.IoC\ArquiteturaDDD.Infra.CrossCutting.IoC.csproj" />
   </ItemGroup>
 

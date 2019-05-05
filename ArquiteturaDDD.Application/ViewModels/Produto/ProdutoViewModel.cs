@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace ArquiteturaDDD.MVC.Models.Produto
+namespace ArquiteturaDDD.Application.ViewModels.Produto
 {
     public class ProdutoViewModel
     {

@@ -314,3 +314,12 @@ ArquiteturaDDD.MVC/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Infra.Data.dll
 ArquiteturaDDD.MVC/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.pdb
 ArquiteturaDDD.MVC/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.dll
 ArquiteturaDDD.Infra.Data/obj/ArquiteturaDDD.Infra.Data.csproj.EntityFrameworkCore.targets
+ArquiteturaDDD.Application/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Application.csproj.CopyComplete
+ArquiteturaDDD.Application/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.pdb
+ArquiteturaDDD.Application/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.dll
+ArquiteturaDDD.ServicesAPI.API/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Application.pdb
+ArquiteturaDDD.ServicesAPI.API/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Application.dll
+ArquiteturaDDD.MVC/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Application.pdb
+ArquiteturaDDD.MVC/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Application.dll
+ArquiteturaDDD.Infra.CrossCutting.IoC/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Application.pdb
+ArquiteturaDDD.Infra.CrossCutting.IoC/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Application.dll

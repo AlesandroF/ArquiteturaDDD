@@ -1,5 +1,5 @@
-﻿using ArquiteturaDDD.MVC.Controllers.ControllerBase;
-using ArquiteturaDDD.MVC.Models.Produto;
+﻿using ArquiteturaDDD.Application.ViewModels.Produto;
+using ArquiteturaDDD.MVC.Controllers.ControllerBase;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
