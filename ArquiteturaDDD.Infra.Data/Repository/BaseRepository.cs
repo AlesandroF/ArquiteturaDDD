@@ -1,45 +1,83 @@
 ﻿using ArquiteturaDDD.Infra.Data.Context;
 using ArquiteturaDDD.Infra.Data.Interfaces.Base;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 
 namespace ArquiteturaDDD.Infra.Data.Repository
 {
-    public abstract class BaseRepository<T> : IDisposable, IBaseRepository<T> where T : class
+    public abstract class BaseRepository<TEntity> : IDisposable, IBaseRepository<TEntity> where TEntity : class
     {
         private readonly SQLContext _context;
+        protected readonly DbSet<TEntity> DbSet;
 
         public BaseRepository(SQLContext context)
         {
             _context = context;
+            DbSet = _context.Set<TEntity>();
         }
 
-        public IEnumerable<T> GetAll()
+        public IEnumerable<TEntity> GetAll()
         {
-            return _context.Set<T>();
+            try
+            {
+                return DbSet;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        public T GetById(int key)
+        public TEntity GetById(long? id)
         {
-            return _context.Set<T>().Find(key);
+            try
+            {
+                return DbSet.Find(id);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        public void Insert(T obj)
+        public void Insert(TEntity obj)
         {
-            _context.Set<T>().Add(obj);
-            SaveAll();
+            try
+            {
+                DbSet.Add(obj);
+                SaveAll();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        public void Update(T obj)
+        public void Update(TEntity obj)
         {
-            _context.Set<T>().Update(obj);
-            SaveAll();
+            try
+            {
+                DbSet.Update(obj);
+                SaveAll();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        public void Delete(T obj)
+        public void Delete(long id)
         {
-            _context.Set<T>().Remove(obj);
-            SaveAll();
+            try
+            {
+                DbSet.Remove(DbSet.Find(id));
+                SaveAll();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void SaveAll()
@@ -50,6 +88,7 @@ namespace ArquiteturaDDD.Infra.Data.Repository
         public void Dispose()
         {
             _context.Dispose();
+            GC.SuppressFinalize(this);
         }
     }
 }

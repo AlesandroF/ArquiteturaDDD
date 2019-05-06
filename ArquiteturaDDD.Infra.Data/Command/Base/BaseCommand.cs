@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Transactions;
 
-namespace ArquiteturaDDD.Infra.CrossCutting.IoC.Command.Base
+namespace ArquiteturaDDD.Infra.Data.Command.Base
 {
     public abstract class BaseCommand
     {
@@ -25,16 +25,13 @@ namespace ArquiteturaDDD.Infra.CrossCutting.IoC.Command.Base
         protected void Execute(TransactionScope _scope)
         {
             if (_scope == null)
-            {
                 Action();
-            }
             else
             {
                 using (_scope)
                 {
                     Action();
                     _scope.Complete();
-                    Dispose();
                 }
             }
         }
@@ -55,7 +52,7 @@ namespace ArquiteturaDDD.Infra.CrossCutting.IoC.Command.Base
 
         protected virtual void Semantic() { }
 
-        protected virtual void PosConditional() { }
+        protected virtual void PosConditional() => Dispose();
 
         public void Dispose()
         {

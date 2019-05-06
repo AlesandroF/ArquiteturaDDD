@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ArquiteturaDDD.Application\ArquiteturaDDD.Application.csproj" />
     <ProjectReference Include="..\ArquiteturaDDD.Domain\ArquiteturaDDD.Domain.csproj" />
     <ProjectReference Include="..\ArquiteturaDDD.Infra.Data\ArquiteturaDDD.Infra.Data.csproj" />
   </ItemGroup>

@@ -352,3 +352,5 @@ ArquiteturaDDD.ServicesAPI.API/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Applicatio
 ArquiteturaDDD.ServicesAPI.API/bin/Debug/netcoreapp2.2/ArquiteturaDDD.ApplicationServices.dll
 ArquiteturaDDD.MVC/bin/Debug/netcoreapp2.2/ArquiteturaDDD.ApplicationServices.pdb
 ArquiteturaDDD.MVC/bin/Debug/netcoreapp2.2/ArquiteturaDDD.ApplicationServices.dll
+ArquiteturaDDD.ApplicationServices/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Application.pdb
+ArquiteturaDDD.ApplicationServices/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Application.dll

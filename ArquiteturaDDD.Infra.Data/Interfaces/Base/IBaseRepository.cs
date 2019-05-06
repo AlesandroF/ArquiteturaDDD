@@ -2,12 +2,12 @@
 
 namespace ArquiteturaDDD.Infra.Data.Interfaces.Base
 {
-    public interface IBaseRepository<T>
+    public interface IBaseRepository<TEntity>
     {
-        IEnumerable<T> GetAll();
-        T GetById(int key);
-        void Insert(T obj);
-        void Update(T obj);
-        void Delete(T obj);
+        IEnumerable<TEntity> GetAll();
+        TEntity GetById(long? key);
+        void Insert(TEntity obj);
+        void Update(TEntity obj);
+        void Delete(long id);
     }
 }

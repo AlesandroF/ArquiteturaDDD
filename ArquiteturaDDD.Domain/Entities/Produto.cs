@@ -1,22 +1,38 @@
-﻿using ArquiteturaDDD.Domain.Entities.Base;
+﻿using ArquiteturaDDD.Domain.Builders;
+using ArquiteturaDDD.Domain.Entities.Base;
+using System;
 
 namespace ArquiteturaDDD.Domain.Entities
 {
     public class Produto : Entity
     {
-        public string Nome { get; set; }
-        public decimal PrecoCusto { get; set; }
-        public decimal PrecoVenda { get; set; }
-        public string Marca { get; set; }
+        public string Nome { get; private set; }
+        public decimal PrecoCusto { get; private set; }
+        public decimal PrecoVenda { get; private set; }
+        public string Marca { get; private set; }
 
         public Produto() {  }
 
-        public Produto(string nome, decimal precoCusto, decimal precoVenda, string marca)
+        public Produto(ProdutoBuilder produto)
+        {
+            Nome = SetNome(produto.Nome);
+            PrecoCusto = SetPrecoCusto(produto.PrecoCusto);
+            PrecoVenda = SetPrecoVenda(produto.PrecoVenda);
+            Marca = SetMarca(produto.Marca);
+            DataInclusao = SetDataInclusao(produto.DataInclusao);
+            DataAlteracao = SetDataAlteracao(produto.DataAlteracao);
+            CodigoUsuario = SetCodigoUsuario(produto.CodigoUsuario);
+        }
+
+        public Produto(string nome, string marca, decimal custo, decimal venda)
         {
             Nome = SetNome(nome);
-            PrecoCusto = SetPrecoCusto(precoCusto);
-            PrecoVenda = SetPrecoVenda(precoVenda);
+            PrecoCusto = SetPrecoCusto(custo);
+            PrecoVenda = SetPrecoVenda(venda);
             Marca = SetMarca(marca);
+            DataInclusao = SetDataInclusao(DateTime.Now);
+            DataAlteracao = SetDataAlteracao(DateTime.Now);
+            CodigoUsuario = SetCodigoUsuario(13);
         }
 
         private string SetNome(string nome)
