@@ -4,7 +4,7 @@ namespace ArquiteturaDDD.Domain.Entities.Base
 {
     public class Entity
     {
-        public long Id { get; private set; }
+        public long Id { get; protected set; }
         public DateTime DataInclusao { get; protected set; }
         public DateTime DataAlteracao { get; protected set; }
         public long CodigoUsuario { get; protected set; }

@@ -46,10 +46,10 @@ namespace ArquiteturaDDD.ApplicationServices.Services
 
         public void Update(ProdutoViewModel produto)
         {
-            //var prod = new ProdutoBuilder(produto.Nome, produto.PrecoCusto, produto.PrecoVenda, produto.Marca)
-            //                          .AddDefaultUpdate()
-            //                          .Build();
-            var prod = _mapper.Map<Produto>(produto);
+            var prod = new ProdutoBuilder(produto.Nome, produto.PrecoCusto, produto.PrecoVenda, produto.Marca)
+                                      .WithId(produto.Id)
+                                      .AddDefaultUpdate()
+                                      .Build();
 
             new CommandUpdateProduto(prod, _produtoRepository).Execute();
         }

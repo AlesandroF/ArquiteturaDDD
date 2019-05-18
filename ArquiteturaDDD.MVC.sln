@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.572
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArquiteturaDDD.MVC", "ArquiteturaDDD.MVC\ArquiteturaDDD.MVC.csproj", "{F8087A1D-B89B-446F-BC0D-3E472F6BF565}"
 EndProject
@@ -33,7 +33,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArquiteturaDDD.Infra.Data",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - ApplicationServices", "1 - ApplicationServices", "{D1744B5E-250D-4A18-AF0B-D5B6B39D4C22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquiteturaDDD.ApplicationServices", "ArquiteturaDDD.ApplicationServices\ArquiteturaDDD.ApplicationServices.csproj", "{2FF019A8-9706-46C6-B262-E63784F64ADD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArquiteturaDDD.ApplicationServices", "ArquiteturaDDD.ApplicationServices\ArquiteturaDDD.ApplicationServices.csproj", "{2FF019A8-9706-46C6-B262-E63784F64ADD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArquiteturaDDD.Domain.Core", "ArquiteturaDDD.Domain.Core\ArquiteturaDDD.Domain.Core.csproj", "{96D27B01-14EB-4FB6-9E27-81862F322A60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Tests", "6 - Tests", "{6336CA79-0E63-4B78-9C10-8EE916A3419D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquiteturaDDD.Gauge.AutomationTest", "ArquiteturaDDD.Gauge.Test\ArquiteturaDDD.Gauge.AutomationTest.csproj", "{5180C3C0-ECD8-407A-8771-7B847865290C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +79,14 @@ Global
 		{2FF019A8-9706-46C6-B262-E63784F64ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FF019A8-9706-46C6-B262-E63784F64ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FF019A8-9706-46C6-B262-E63784F64ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D27B01-14EB-4FB6-9E27-81862F322A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D27B01-14EB-4FB6-9E27-81862F322A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D27B01-14EB-4FB6-9E27-81862F322A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D27B01-14EB-4FB6-9E27-81862F322A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5180C3C0-ECD8-407A-8771-7B847865290C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5180C3C0-ECD8-407A-8771-7B847865290C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5180C3C0-ECD8-407A-8771-7B847865290C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5180C3C0-ECD8-407A-8771-7B847865290C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +102,8 @@ Global
 		{ADE75951-616C-4781-8143-B8BD500398B0} = {6FDC536B-E861-4BF1-941E-8BA6AA3C4070}
 		{3390C3CB-BBC9-4140-B23B-51E1A2E54541} = {457FA3DE-BE3D-41F1-BAA8-65EBAFF68B77}
 		{2FF019A8-9706-46C6-B262-E63784F64ADD} = {D1744B5E-250D-4A18-AF0B-D5B6B39D4C22}
+		{96D27B01-14EB-4FB6-9E27-81862F322A60} = {6FDC536B-E861-4BF1-941E-8BA6AA3C4070}
+		{5180C3C0-ECD8-407A-8771-7B847865290C} = {6336CA79-0E63-4B78-9C10-8EE916A3419D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4ECDC175-05F1-4A66-9977-2C542CF3556F}

@@ -33,6 +33,12 @@ namespace ArquiteturaDDD.Domain.Builders
             return this;
         }
 
+        public ProdutoBuilder WithId(long id)
+        {
+            Id = id;
+            return this;
+        }
+
         public Produto Build()
         {
             return new Produto(this);

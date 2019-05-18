@@ -15,6 +15,9 @@ namespace ArquiteturaDDD.Domain.Entities
 
         public Produto(ProdutoBuilder produto)
         {
+            if (produto.Id > 0)
+                Id = produto.Id;
+
             Nome = SetNome(produto.Nome);
             PrecoCusto = SetPrecoCusto(produto.PrecoCusto);
             PrecoVenda = SetPrecoVenda(produto.PrecoVenda);

@@ -7,5 +7,6 @@ namespace ArquiteturaDDD.Domain.Builders.Base
         public DateTime DataInclusao { get; protected set; }
         public DateTime DataAlteracao { get; protected set; }
         public long CodigoUsuario { get; protected set; }
+        public long Id { get; protected set; }
     }
 }   
