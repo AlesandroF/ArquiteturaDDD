@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ArquiteturaDDD.ApplicationServices\ArquiteturaDDD.ApplicationServices.csproj" />
     <ProjectReference Include="..\ArquiteturaDDD.Application\ArquiteturaDDD.Application.csproj" />
+    <ProjectReference Include="..\ArquiteturaDDD.Gauge.Test\ArquiteturaDDD.Gauge.AutomationTest.csproj" />
     <ProjectReference Include="..\ArquiteturaDDD.Infra.Data\ArquiteturaDDD.Infra.Data.csproj" />
   </ItemGroup>
 

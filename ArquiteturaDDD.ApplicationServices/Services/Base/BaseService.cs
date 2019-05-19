@@ -5,7 +5,7 @@ using AutoMapper;
 
 namespace ArquiteturaDDD.ApplicationServices.Services.Base
 {
-    public abstract class BaseService<T> : IBaseService<T> where T : Entity
+    public abstract class BaseService<T> : IBaseService where T : Entity
     {
         protected readonly IBaseRepository<T> _repository;
         protected readonly IMapper _mapper;

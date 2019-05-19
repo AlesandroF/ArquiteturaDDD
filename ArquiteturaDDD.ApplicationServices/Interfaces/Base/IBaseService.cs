@@ -2,7 +2,7 @@
 
 namespace ArquiteturaDDD.ApplicationServices.Interfaces.Base
 {
-    public interface IBaseService<T> where T : Entity
+    public interface IBaseService
     {
     }
 }

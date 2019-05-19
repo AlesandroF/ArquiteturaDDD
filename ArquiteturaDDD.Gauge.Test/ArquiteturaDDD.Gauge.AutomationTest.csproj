@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ArquiteturaDDD.ApplicationServices\ArquiteturaDDD.ApplicationServices.csproj" />
+    <ProjectReference Include="..\ArquiteturaDDD.Application\ArquiteturaDDD.Application.csproj" />
   </ItemGroup>
 
 </Project>

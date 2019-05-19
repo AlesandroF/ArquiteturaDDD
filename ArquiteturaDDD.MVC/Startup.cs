@@ -42,6 +42,7 @@ namespace ArquiteturaDDD.MVC
 
             services.RegisterServices();
             services.RegisterRepositories();
+            services.RegisterGaugeContext();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

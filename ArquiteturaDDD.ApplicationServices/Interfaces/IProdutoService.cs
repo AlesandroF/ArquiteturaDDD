@@ -1,4 +1,5 @@
 ﻿using ArquiteturaDDD.Application.ViewModels.Produto;
+using ArquiteturaDDD.Domain.Entities.Base;
 using System.Collections.Generic;
 
 namespace ArquiteturaDDD.ApplicationServices.Interfaces

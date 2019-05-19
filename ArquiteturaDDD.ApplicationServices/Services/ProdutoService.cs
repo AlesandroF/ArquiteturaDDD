@@ -10,9 +10,19 @@ using System.Collections.Generic;
 
 namespace ArquiteturaDDD.ApplicationServices.Services
 {
-    public class ProdutoService : BaseService<Produto>, IProdutoService
+    public class ProdutoService : IProdutoService
     {
-        public ProdutoService(IMapper mapper, IProdutoRepository<Produto> produtoRepository) : base(mapper, produtoRepository) {  }
+        private readonly IMapper _mapper;
+        private readonly IProdutoRepository<Produto> _repository;
+        public ProdutoService(IMapper mapper, IProdutoRepository<Produto> produtoRepository)
+        {
+            _mapper = mapper;
+            _repository = produtoRepository;
+        }
+
+        public ProdutoService() { }
+
+        //: base(mapper, produtoRepository) {  }
 
         public ProdutoViewModel GetById(long? id)
         {
@@ -30,7 +40,7 @@ namespace ArquiteturaDDD.ApplicationServices.Services
                                     .AddDefaultInsert()
                                     .Build();
 
-            new CommandInsertProduto(prod, (IProdutoRepository<Produto>)_repository).Execute();
+            new CommandInsertProduto(prod, _repository).Execute();
         }
 
         public void Remove(long id)
