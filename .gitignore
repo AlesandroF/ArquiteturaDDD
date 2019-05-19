@@ -420,3 +420,13 @@ ArquiteturaDDD.Domain.Core/obj/ArquiteturaDDD.Domain.Core.csproj.nuget.g.props
 ArquiteturaDDD.Domain.Core/obj/ArquiteturaDDD.Domain.Core.csproj.nuget.dgspec.json
 ArquiteturaDDD.Domain.Core/obj/ArquiteturaDDD.Domain.Core.csproj.nuget.cache
 ArquiteturaDDD.Domain/obj/ArquiteturaDDD.Domain.csproj.nuget.dgspec.json
+.vs/ArquiteturaDDD.MVC/v16/.suo
+ArquiteturaDDD.Gauge.Test/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Infra.Data.pdb
+ArquiteturaDDD.Gauge.Test/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Infra.Data.dll
+ArquiteturaDDD.Gauge.Test/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.pdb
+ArquiteturaDDD.Gauge.Test/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Domain.dll
+ArquiteturaDDD.Gauge.Test/bin/Debug/netcoreapp2.2/ArquiteturaDDD.ApplicationServices.pdb
+ArquiteturaDDD.Gauge.Test/bin/Debug/netcoreapp2.2/ArquiteturaDDD.ApplicationServices.dll
+ArquiteturaDDD.Gauge.Test/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Application.pdb
+ArquiteturaDDD.Gauge.Test/bin/Debug/netcoreapp2.2/ArquiteturaDDD.Application.dll
+ArquiteturaDDD.Gauge.Test/obj/Debug/netcoreapp2.2/ArquiteturaDDD.Gauge.AutomationTest.csproj.CopyComplete
