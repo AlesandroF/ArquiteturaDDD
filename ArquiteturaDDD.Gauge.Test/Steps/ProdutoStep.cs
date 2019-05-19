@@ -7,18 +7,18 @@ namespace ArquiteturaDDD.Gauge.AutomationTest.Steps
 {
     public class ProdutoStep
     {
-        private readonly IProdutoService _produtoService;
+        //private readonly IProdutoService _produtoService;
 
-        public ProdutoStep(IProdutoService produtoService)
-        {
-            _produtoService = produtoService;
-        }
+        //public ProdutoStep(IProdutoService produtoService)
+        //{
+        //    _produtoService = produtoService;
+        //}
 
         [Step("Criar um produto")]
         public void CriarProduto()
         {
             var produto = new ProdutoViewModel { Marca = "teste", Nome = "teste", PrecoCusto = 1, PrecoVenda = 5 };
-            _produtoService.Insert(produto);
+           // _produtoService.Insert(produto);
         }
 
         [Test]

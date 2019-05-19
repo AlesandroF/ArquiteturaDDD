@@ -37,6 +37,7 @@ namespace ArquiteturaDDD.ServicesAPI.API
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.RegisterServices();
             services.RegisterRepositories();
+            services.RegisterGaugeContext();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

@@ -1,5 +1,6 @@
 ﻿using ArquiteturaDDD.Application.ViewModels.Produto;
 using ArquiteturaDDD.ApplicationServices.Interfaces;
+using ArquiteturaDDD.ApplicationServices.Services.Base;
 using ArquiteturaDDD.Domain.Builders;
 using ArquiteturaDDD.Domain.Entities;
 using ArquiteturaDDD.Infra.Data.Command.ProdutoCommands;
@@ -9,25 +10,18 @@ using System.Collections.Generic;
 
 namespace ArquiteturaDDD.ApplicationServices.Services
 {
-    public class ProdutoService : IProdutoService
+    public class ProdutoService : BaseService<Produto>, IProdutoService
     {
-        private readonly IMapper _mapper;
-        private readonly IProdutoRepository<Produto> _produtoRepository;
-
-        public ProdutoService(IMapper mapper, IProdutoRepository<Produto> produtoRepository)
-        {
-            _produtoRepository = produtoRepository;
-            _mapper = mapper;
-        }
+        public ProdutoService(IMapper mapper, IProdutoRepository<Produto> produtoRepository) : base(mapper, produtoRepository) {  }
 
         public ProdutoViewModel GetById(long? id)
         {
-            return _mapper.Map<ProdutoViewModel>(_produtoRepository.GetById(id));
+            return _mapper.Map<ProdutoViewModel>(_repository.GetById(id));
         }
 
         public IEnumerable<ProdutoViewModel> GetProdutos()
         {
-            return _mapper.Map<IEnumerable<ProdutoViewModel>>(_produtoRepository.GetAll());
+            return _mapper.Map<IEnumerable<ProdutoViewModel>>(_repository.GetAll());
         }
 
         public void Insert(ProdutoViewModel produto)
@@ -36,12 +30,12 @@ namespace ArquiteturaDDD.ApplicationServices.Services
                                     .AddDefaultInsert()
                                     .Build();
 
-            new CommandInsertProduto(prod, _produtoRepository).Execute();
+            new CommandInsertProduto(prod, (IProdutoRepository<Produto>)_repository).Execute();
         }
 
         public void Remove(long id)
         {
-            _produtoRepository.Delete(id);
+            _repository.Delete(id);
         }
 
         public void Update(ProdutoViewModel produto)
@@ -51,7 +45,7 @@ namespace ArquiteturaDDD.ApplicationServices.Services
                                       .AddDefaultUpdate()
                                       .Build();
 
-            new CommandUpdateProduto(prod, _produtoRepository).Execute();
+            new CommandUpdateProduto(prod, (IProdutoRepository<Produto>)_repository).Execute();
         }
     }
 }
