@@ -1,6 +1,5 @@
 ﻿using ArquiteturaDDD.Application.ViewModels.Produto;
 using ArquiteturaDDD.ApplicationServices.Interfaces;
-using ArquiteturaDDD.ApplicationServices.Services.Base;
 using ArquiteturaDDD.Domain.Builders;
 using ArquiteturaDDD.Domain.Entities;
 using ArquiteturaDDD.Infra.Data.Command.ProdutoCommands;
@@ -14,15 +13,12 @@ namespace ArquiteturaDDD.ApplicationServices.Services
     {
         private readonly IMapper _mapper;
         private readonly IProdutoRepository<Produto> _repository;
+
         public ProdutoService(IMapper mapper, IProdutoRepository<Produto> produtoRepository)
         {
             _mapper = mapper;
             _repository = produtoRepository;
         }
-
-        public ProdutoService() { }
-
-        //: base(mapper, produtoRepository) {  }
 
         public ProdutoViewModel GetById(long? id)
         {
@@ -55,7 +51,7 @@ namespace ArquiteturaDDD.ApplicationServices.Services
                                       .AddDefaultUpdate()
                                       .Build();
 
-            new CommandUpdateProduto(prod, (IProdutoRepository<Produto>)_repository).Execute();
+            new CommandUpdateProduto(prod, _repository).Execute();
         }
     }
 }
